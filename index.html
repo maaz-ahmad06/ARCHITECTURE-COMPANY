@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Architecture Company — Studio for Structure &amp; Light</title>
+<meta name="description" content="Architecture Company is a design studio working across residential, commercial and cultural buildings.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ LOADER ============ -->
+<div class="loader" id="loader">
+  <div class="loader-inner">
+    <svg class="loader-mark" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="10" y="10" width="100" height="100" class="loader-square"/>
+      <line x1="10" y1="60" x2="110" y2="60" class="loader-line"/>
+      <line x1="60" y1="10" x2="60" y2="110" class="loader-line"/>
+    </svg>
+    <div class="loader-text">
+      <span>ARCHITECTURE&nbsp;COMPANY</span>
+    </div>
+    <div class="loader-progress">
+      <span id="loaderPercent">00</span><span class="loader-percent-sign">%</span>
+    </div>
+  </div>
+</div>
+
+<!-- ============ NAV ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="#top" class="logo">
+      <span class="logo-mark">AC</span>
+      <span class="logo-word">Architecture&nbsp;Company</span>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="#philosophy"><span class="nav-index">01</span>Studio</a>
+      <a href="#process"><span class="nav-index">02</span>Process</a>
+      <a href="#projects"><span class="nav-index">03</span>Projects</a>
+      <a href="#team"><span class="nav-index">04</span>People</a>
+      <a href="#contact"><span class="nav-index">05</span>Contact</a>
+    </nav>
+    <a href="#contact" class="btn btn-ghost header-cta">Start a project</a>
+    <button class="burger" id="burger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ MOBILE MENU ============ -->
+<div class="mobile-menu" id="mobileMenu">
+  <nav>
+    <a href="#philosophy"><span class="nav-index">01</span>Studio</a>
+    <a href="#process"><span class="nav-index">02</span>Process</a>
+    <a href="#projects"><span class="nav-index">03</span>Projects</a>
+    <a href="#team"><span class="nav-index">04</span>People</a>
+    <a href="#contact"><span class="nav-index">05</span>Contact</a>
+  </nav>
+  <div class="mobile-menu-foot">
+    <span>Peshawar · Remote worldwide</span>
+  </div>
+</div>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=1800&q=80" alt="Modern concrete building facade" id="heroImg">
+      <div class="hero-scrim"></div>
+    </div>
+
+    <svg class="hero-draft" viewBox="0 0 1000 600" preserveAspectRatio="none" aria-hidden="true">
+      <line x1="0" y1="120" x2="1000" y2="120" class="draft-line" style="--d:0"/>
+      <line x1="0" y1="480" x2="1000" y2="480" class="draft-line" style="--d:1"/>
+      <line x1="140" y1="0" x2="140" y2="600" class="draft-line" style="--d:2"/>
+      <line x1="860" y1="0" x2="860" y2="600" class="draft-line" style="--d:3"/>
+      <rect x="140" y="120" width="720" height="360" class="draft-rect" style="--d:4"/>
+      <circle cx="500" cy="300" r="140" class="draft-circle" style="--d:5"/>
+    </svg>
+
+    <div class="hero-annotations" aria-hidden="true">
+      <span class="an an-1">34.0151° N</span>
+      <span class="an an-2">SCALE 1:100</span>
+      <span class="an an-3">PROJECT № 014</span>
+      <span class="an an-4">REV. C</span>
+    </div>
+
+    <div class="hero-content">
+      <p class="eyebrow reveal-line">Architecture &amp; interiors, since 2011</p>
+      <h1 class="hero-title">
+        <span class="reveal-line">We draft before</span>
+        <span class="reveal-line"><em>we build.</em></span>
+      </h1>
+      <p class="hero-sub reveal-line">
+        Architecture Company is a design studio working across residential, commercial
+        and cultural buildings — from the first pencil line to the last handrail.
+      </p>
+      <div class="hero-actions reveal-line">
+        <a href="#projects" class="btn btn-solid">View the work</a>
+        <a href="#contact" class="btn btn-line">Enquire</a>
+      </div>
+    </div>
+
+    <div class="scroll-cue">
+      <span>Scroll</span>
+      <div class="scroll-cue-track"><div class="scroll-cue-dot"></div></div>
+    </div>
+  </section>
+
+  <!-- ============ MARQUEE ============ -->
+  <div class="marquee">
+    <div class="marquee-track">
+      <span>Residential — Commercial — Cultural — Hospitality — Interiors — Masterplanning — </span>
+      <span>Residential — Commercial — Cultural — Hospitality — Interiors — Masterplanning — </span>
+    </div>
+  </div>
+
+  <!-- ============ PHILOSOPHY ============ -->
+  <section class="philosophy" id="philosophy">
+    <div class="section-head reveal">
+      <p class="eyebrow">01 / Studio</p>
+      <h2>Honest materials. <br>Considered light.</h2>
+    </div>
+
+    <div class="philosophy-grid">
+      <div class="philosophy-copy reveal">
+        <p class="lead">
+          We believe a building should tell the truth about how it is made —
+          concrete reads as concrete, timber ages like timber, and light is
+          treated as a material in its own right, not an afterthought.
+        </p>
+        <p>
+          Every commission starts on site, not on paper. We study the slope of
+          the land, the path of the sun and the grain of the neighbourhood
+          before a single wall is drawn. The result is architecture that feels
+          inevitable, as if it had always belonged where it stands.
+        </p>
+        <a href="#process" class="text-link">See how we work →</a>
+      </div>
+
+      <div class="philosophy-stats">
+        <div class="stat reveal">
+          <span class="stat-num" data-count="13">0</span>
+          <span class="stat-label">Years practising</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat-num" data-count="86">0</span>
+          <span class="stat-label">Projects delivered</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat-num" data-count="12">0</span>
+          <span class="stat-label">Design awards</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat-num" data-count="240" data-suffix="k">0</span>
+          <span class="stat-label">Sq. ft. under construction</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="philosophy-image reveal">
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80" alt="Sunlight through a modern staircase interior">
+      <span class="mono-tag">FIG. 01 — INTERIOR STAIR STUDY</span>
+    </div>
+  </section>
+
+  <!-- ============ PROCESS ============ -->
+  <section class="process" id="process">
+    <div class="section-head reveal">
+      <p class="eyebrow">02 / Process</p>
+      <h2>Four stages, <br>one thread.</h2>
+    </div>
+
+    <div class="process-list">
+      <div class="process-item reveal">
+        <span class="process-num">01</span>
+        <div class="process-body">
+          <h3>Discover</h3>
+          <p>Site visits, surveys and long conversations with the people who'll actually live and work in the building.</p>
+        </div>
+        <span class="process-tag">Weeks 1–3</span>
+      </div>
+      <div class="process-item reveal">
+        <span class="process-num">02</span>
+        <div class="process-body">
+          <h3>Design</h3>
+          <p>Massing studies, sketches and physical models — the building is tested in section long before it's tested in 3D.</p>
+        </div>
+        <span class="process-tag">Weeks 4–10</span>
+      </div>
+      <div class="process-item reveal">
+        <span class="process-num">03</span>
+        <div class="process-body">
+          <h3>Detail</h3>
+          <p>Construction documentation down to the millimetre — joinery, junctions, and the details no one notices until they're missing.</p>
+        </div>
+        <span class="process-tag">Weeks 11–18</span>
+      </div>
+      <div class="process-item reveal">
+        <span class="process-num">04</span>
+        <div class="process-body">
+          <h3>Deliver</h3>
+          <p>On-site administration through to handover, keeping the drawing and the built thing honest with one another.</p>
+        </div>
+        <span class="process-tag">Through completion</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="projects" id="projects">
+    <div class="section-head reveal">
+      <p class="eyebrow">03 / Selected Work</p>
+      <h2>Recent projects</h2>
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="residential">Residential</button>
+        <button class="filter-btn" data-filter="commercial">Commercial</button>
+        <button class="filter-btn" data-filter="cultural">Cultural</button>
+      </div>
+    </div>
+
+    <div class="project-grid" id="projectGrid">
+
+      <article class="project-card reveal" data-cat="residential">
+        <div class="project-img">
+          <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&w=1200&q=80" alt="Modern minimalist house with large glass windows">
+        </div>
+        <div class="project-info">
+          <h3>Linden Ridge House</h3>
+          <span class="mono-tag">RESIDENTIAL — 2024</span>
+        </div>
+      </article>
+
+      <article class="project-card reveal" data-cat="commercial">
+        <div class="project-img">
+          <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1200&q=80" alt="Modern glass office building exterior">
+        </div>
+        <div class="project-info">
+          <h3>Harbor View Offices</h3>
+          <span class="mono-tag">COMMERCIAL — 2023</span>
+        </div>
+      </article>
+
+      <article class="project-card reveal" data-cat="cultural">
+        <div class="project-img">
+          <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80" alt="Modern museum building with dramatic architecture">
+        </div>
+        <div class="project-info">
+          <h3>Meridian Arts Pavilion</h3>
+          <span class="mono-tag">CULTURAL — 2022</span>
+        </div>
+      </article>
+
+      <article class="project-card reveal" data-cat="residential">
+        <div class="project-img">
+          <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80" alt="Contemporary living room interior with natural light">
+        </div>
+        <div class="project-info">
+          <h3>Birchwood Residence</h3>
+          <span class="mono-tag">RESIDENTIAL — 2023</span>
+        </div>
+      </article>
+
+      <article class="project-card reveal" data-cat="commercial">
+        <div class="project-img">
+          <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80" alt="Modern office interior with wood and glass">
+        </div>
+        <div class="project-info">
+          <h3>Foundry Studios</h3>
+          <span class="mono-tag">COMMERCIAL — 2021</span>
+        </div>
+      </article>
+
+      <article class="project-card reveal" data-cat="cultural">
+        <div class="project-img">
+          <img src="https://images.unsplash.com/photo-1519452575417-564c1401ecc0?auto=format&fit=crop&w=1200&q=80" alt="Modern library or cultural building with geometric design">
+        </div>
+        <div class="project-info">
+          <h3>Coastal Reading Rooms</h3>
+          <span class="mono-tag">CULTURAL — 2020</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ QUOTE ============ -->
+  <section class="quote-section">
+    <div class="quote-bg">
+      <img src="https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=format&fit=crop&w=1800&q=80" alt="Architectural detail of a modern concrete building">
+      <div class="quote-scrim"></div>
+    </div>
+    <blockquote class="reveal">
+      <p>“They listened before they drew a single line — the house feels like
+      it was already there, waiting for us to find it.”</p>
+      <cite>— M. &amp; R. Whitfield, Linden Ridge House</cite>
+    </blockquote>
+  </section>
+
+  <!-- ============ TEAM ============ -->
+  <section class="team" id="team">
+    <div class="section-head reveal">
+      <p class="eyebrow">04 / People</p>
+      <h2>The people behind<br>the drawings</h2>
+    </div>
+
+    <div class="team-grid">
+      <div class="team-card reveal">
+        <div class="team-img">
+          <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=600&q=80" alt="Portrait of studio principal architect">
+        </div>
+        <h3>Sarah Nolan</h3>
+        <span class="mono-tag">FOUNDING PRINCIPAL</span>
+      </div>
+      <div class="team-card reveal">
+        <div class="team-img">
+          <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=600&q=80" alt="Portrait of design director">
+        </div>
+        <h3>Idris Kamau</h3>
+        <span class="mono-tag">DESIGN DIRECTOR</span>
+      </div>
+      <div class="team-card reveal">
+        <div class="team-img">
+          <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=600&q=80" alt="Portrait of technical lead architect">
+        </div>
+        <h3>Priya Sharma</h3>
+        <span class="mono-tag">TECHNICAL LEAD</span>
+      </div>
+      <div class="team-card reveal">
+        <div class="team-img">
+          <img src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?auto=format&fit=crop&w=600&q=80" alt="Portrait of interiors lead">
+        </div>
+        <h3>Marcus Owen</h3>
+        <span class="mono-tag">INTERIORS LEAD</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="contact" id="contact">
+    <div class="contact-grid">
+      <div class="contact-copy reveal">
+        <p class="eyebrow">05 / Contact</p>
+        <h2>Have a site.<br>Need a studio?</h2>
+        <p class="lead">Tell us about the plot, the programme, and the timeline —
+        we reply to every enquiry within two working days.</p>
+
+        <div class="contact-details">
+          <div>
+            <span class="mono-tag">STUDIO</span>
+            <p>14 Ferro Lane, Design District<br>Peshawar, Pakistan</p>
+          </div>
+          <div>
+            <span class="mono-tag">DIRECT</span>
+            <p>hello@architecturecompany.studio<br>+92 300 000 0000</p>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm">
+        <div class="form-row">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" required placeholder="Your full name">
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" required placeholder="you@email.com">
+          </label>
+        </div>
+        <label>
+          <span>Project type</span>
+          <select name="type">
+            <option>Residential</option>
+            <option>Commercial</option>
+            <option>Cultural</option>
+            <option>Interiors only</option>
+          </select>
+        </label>
+        <label>
+          <span>Tell us about it</span>
+          <textarea name="message" rows="4" placeholder="Site, size, timeline, budget range..."></textarea>
+        </label>
+        <button type="submit" class="btn btn-solid full">Send enquiry</button>
+        <p class="form-note" id="formNote">We'll reply within two working days.</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="footer-top">
+    <a href="#top" class="footer-logo">Architecture<br>Company</a>
+    <div class="footer-cols">
+      <div>
+        <span class="mono-tag">SITEMAP</span>
+        <a href="#philosophy">Studio</a>
+        <a href="#process">Process</a>
+        <a href="#projects">Projects</a>
+        <a href="#team">People</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div>
+        <span class="mono-tag">SOCIAL</span>
+        <a href="#">Instagram</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Pinterest</a>
+      </div>
+      <div>
+        <span class="mono-tag">STUDIO HOURS</span>
+        <p>Mon – Fri, 09:00 – 18:00<br>By appointment, Saturdays</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© <span id="year"></span> Architecture Company. All rights reserved.</span>
+    <button class="to-top" id="toTop" aria-label="Back to top">↑ Back to top</button>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
